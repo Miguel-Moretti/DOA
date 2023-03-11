@@ -1,3 +1,3 @@
-# Miguel-Moretti.github.io
+# DOA.github.io
 
-This is just a simple webpage that is displayed upon joining my Mordhau server.
+A simple webpage that is displayed upon joining the DOA Mordhau server.
