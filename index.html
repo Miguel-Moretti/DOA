@@ -3,19 +3,34 @@
 <style>
 
     body {
-        background-color: black;
         height: 100%;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
+        width: 100%;
+        margin: 0;
     }
 
     .border {
         border: 5px solid rgb(78, 120, 255);
         border-radius: 5px;
-        top: 50%;
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 50%;
+        max-height: 75%;
+        padding: 20px;
+    }
+
+    .outer-container {
+        background-color: black;
+        position : absolute;
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+
+    .inner-container {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        width: 50%;
     }
 
     .doalogo {
@@ -80,25 +95,29 @@
 
 <html>
 <body>
-    <div class="border">
-        <div>
-            <img src="DOA.Official.Duelyard.jpg" style="text-align:center" class="doalogo">
-        </div>
-        <div style="text-align: center;">
-            <span class="big">
-                Rules:<br>
-            </span>
-            <hr>
-            <span class="brules">
-                <span class="grules">1. </span>Flourish <span class="grules">(X+1)</span> to offer a duel<span class="grules">.</span><br>
-                <span class="grules">2. </span>Be friendly<span class=grules>,</span> help out the noobies<span class=grules>!</span><br>
-                <span class="grules">3. </span>FFA or being toxic <span class="grules">=</span> Admin Abuse <span class="grules">+</span> Perm Ban<span class="grules">.</span><br><br>
-            </span>
-        </div>
-        <div style="text-align: center";> 
-            <span style="vertical-align: middle;">
-                <img class="leftdiscordlogo" src="Discord Logo.png"><a href="https://discord.gg/eU7GcC6Ve3" class="medium">Join our Discord!</a><img class="rightdiscordlogo" src="Discord Logo.png">
-            </span>
+    <div class="outer-container">
+        <div class="inner-container">
+            <div class="border">
+                <div>
+                    <img src="DOA.Official.Duelyard.jpg" style="text-align:center" class="doalogo">
+                </div>
+                <div style="text-align: center;">
+                    <span class="big">
+                        Rules:<br>
+                    </span>
+                    <hr>
+                    <span class="brules">
+                        <span class="grules">1. </span>Flourish <span class="grules">(X+1)</span> to offer a duel<span class="grules">.</span><br>
+                        <span class="grules">2. </span>Be friendly<span class=grules>,</span> help out the noobies<span class=grules>!</span><br>
+                        <span class="grules">3. </span>FFA or being toxic <span class="grules">=</span> Admin Abuse <span class="grules">+</span> Perm Ban<span class="grules">.</span><br><br>
+                    </span>
+                </div>
+                <div style="text-align: center";> 
+                    <span style="vertical-align: middle;">
+                        <img class="leftdiscordlogo" src="Discord Logo.png"><a href="https://discord.gg/eU7GcC6Ve3" class="medium">Join our Discord!</a><img class="rightdiscordlogo" src="Discord Logo.png">
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
